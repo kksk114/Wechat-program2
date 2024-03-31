@@ -1,0 +1,62 @@
+<view class="content">
+  <view class="head">
+    <navigator url="../register/register">
+  <view class="headIcon">
+    <image src="/images/icons/225默认头像.png" style="width:70px;height:70px;"></image>
+  </view>
+</navigator>
+   <view class="register"><navigator url="../register/register" hover-class="navigator-hover">{{Name}}</navigator></view>
+   <view class="detail"><text>></text></view>
+  </view>
+  <view class="hr"></view>
+  <view style="display:flex;flex-direction:row;">
+    <view class="order">我的任务</view>
+    <view class="detail2"><text></text></view>
+  </view>
+  <view class="line"></view>
+    <view class="nav">
+     <view class="nav-item" bindtap="nav" id="0" data-status='1'>
+       <view><image src="/images/icons/任务提醒1.png" style="width:28px;height:25px;"></image></view>
+       <view>待接取</view>
+     </view>
+     <view class="nav-item" bindtap="nav" id="1" data-status='3'>
+       <view><image src="/images/icons/任务提醒2.png" style="width:36px;height:27px;"></image></view>
+       <view>待完成</view>
+     </view>
+     <view class="nav-item" bindtap="nav" id="2" data-status='4'>
+       <view><image src="/images/icons/通过2.png" style="width:31px;height:28px;"></image></view>
+       <view>已完成</view>
+     </view>
+  </view>
+   <view class="hr"></view>
+
+   <view class="item">
+    <view class="order">我的消息</view>
+    <view class="detail2"><text>></text></view>
+  </view>
+  <view class="line"></view>
+   <view class="line"></view>
+  <view class="item">
+    <view class="order">我的积分</view>
+    <view class="detail2"><text>0.00 ></text></view>
+  </view>
+  <view class="line"></view>
+ <view class="hr"></view>
+ <view class="item" bindtap="updatePwd">
+    <view class="order">修改密码</view>
+    <view class="detail2"><text>></text></view>
+  </view>
+  <view class="line"></view>
+  <view class="item" bindtap="opinion">
+    <view class="order">意见反馈</view>
+    <view class="detail2"><text>></text></view>
+  </view>
+   <view class="line"></view>
+  <view class="item" bindtap='clearStore'>
+    <view class="order" >清除缓存</view>
+    <view class="detail2"><text> ></text></view>
+  </view>
+
+  <view class="hr"></view>
+
+</view>

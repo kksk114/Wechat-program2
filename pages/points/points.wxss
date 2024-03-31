@@ -1,0 +1,46 @@
+.container{
+  padding-top: 0;
+  text-align: center;
+}
+
+.titleWord{
+  padding-bottom: 10px;
+  font-size: larger;
+}
+
+.creditNumber{
+  font-size: 30px;
+}
+
+.hr{
+  width: 100%;
+  height: 15px;
+  background-color: #f5f5f5;
+}
+
+.line{
+  height: 1px;
+  width: 100%;
+  background-color: #666666;
+  opacity: 0.2;
+}
+
+.items{
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.item{
+  flex: 0 0 45%;  /* 修改为 flex: 0 0 45% 以在每行放两个物品 */
+  height: 280px;  /* 增加高度 */
+  border: 1px solid #009966;
+  border-radius: 5px;
+  margin: 10px 2.5%;  /* 添加左右边距以保持物品之间的间距 */
+  text-align: center;
+}
+
+.quantity{
+  font-size: 10px;  /* 减小字体大小 */
+}

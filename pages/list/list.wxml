@@ -1,0 +1,7 @@
+<!--pages/list/list.wxml-->
+<text>pages/list/list.wxml</text>
+<scroll-view class="container1" scroll-y>
+<view>{{info}}</view>
+<view>b</view>
+<view>c</view>
+</scroll-view>

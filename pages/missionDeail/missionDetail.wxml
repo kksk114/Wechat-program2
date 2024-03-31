@@ -1,0 +1,62 @@
+<view class="content">
+ <view class="haibao">
+   <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class="swiperHeight">
+     <block wx:for="{{goodsDetail.roundPlayPicList}}">
+        <swiper-item>
+          <image src="{{item}}" class="silde-image" mode="aspectFill"></image>
+        </swiper-item>
+     </block>
+   </swiper>
+ </view>
+ <view class="title"><text class="tip">任务</text>{{goodsDetail.goodsName}}</view>
+<view class="desc">{{goodsDetail.briefIntroduction}}</view>
+<view class="price"><text class="symbol">积分</text><text class="account">{{goodsDetail.goodsPrice}}</text></view>
+<view class="hr"></view>
+<view class="items">
+  <view class="item">
+    <view class="term">简介</view>
+    <view>{{goodsDetail.introduction}}</view>
+  </view>
+  <view class="line"></view>
+  <view class="item">
+    <view class="term">截止时间</view>
+    <view>{{goodsDetail.deadline}}</view>
+  </view>
+</view>
+<view class="hr"></view>
+
+<view class="tab">
+  <view class="{{currentTab==0?'select':'normal'}}" id="0" bindtap="switchNav">任务展示</view>
+  <view class="{{currentTab==1?'select':'normal'}}" id="1" bindtap="switchNav">任务详情</view>
+</view>
+<view>
+  <swiper current="{{currentTab}}" style="height:2000px;">
+      <swiper-item>
+         <view class="detail">
+          <block wx:for="{{goodsDetail.infoPicList}}">
+           <image src="{{item}}" mode="widthFix"></image>
+          </block>
+         </view>
+      </swiper-item>
+      <swiper-item>
+         <view class="items">
+            <view class="item">
+              <view class="term">详细介绍</view>
+            </view>
+            <view class="line"></view>
+            <view class="item">
+              <view>{{goodsDetail.missionDetails}}</view>
+            </view>
+            
+            <view class="line"></view>
+          </view>
+      </swiper-item>
+  </swiper>
+</view>
+<view class="hr"></view>
+<view class="bottom">
+  <view class="intocart" bindtap='intocart' id="{{goodsDetail.id}}">接取任务</view>
+  <view class="toMap" bindtap="toMap" id="{{goodsDetail.id}}">立即完成</view>
+</view>
+
+</view>

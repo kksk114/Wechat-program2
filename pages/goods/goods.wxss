@@ -1,0 +1,122 @@
+.content{
+   font-family: "Microsoft YaHei";
+   width: 100%;
+}
+.search{
+    width: 100%;
+    background-color: #009966;
+    height: 50px;
+    line-height: 50px;
+    position: fixed;
+    z-index: 1;
+}
+.searchInput{
+    width: 95%;
+    background-color: #ffffff;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 15px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    margin: 0 auto;
+    top: 10px;
+}
+.searchContent{
+    font-size:12px;
+    color: #777777;
+}
+.type{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0 auto; 
+    position: fixed;
+    z-index: 999;
+    background: #f2f2f2;
+    top:50px;
+}
+.type view{
+    margin: 0 auto;
+}
+.select{
+    font-size:16px;
+    font-weight: bold;
+    width: 25%;
+    text-align: center;
+    height: 45px;
+    line-height: 45px;
+    border-bottom:5rpx solid #009966;  
+    color: #009966;
+}
+.default{
+    width: 25%;
+    font-size:16px;
+    text-align: center;
+    height: 45px;
+    line-height: 45px;
+}
+.list{
+  margin-top: 50px;
+}
+.book{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.pic image{
+    width:80px;
+    height:100px;
+    padding:10px;
+}
+.base-info{
+    font-size: 12px;
+    padding-top: 10px;
+    line-height: 22px;
+}
+.name{
+    font-size: 15px;
+    font-weight: bold;
+    color: #000000;
+}
+.people{
+    color: #555555;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.price{
+    font-size: 18px;
+    font-weight: bold;
+    color: #E53D30;
+    margin-left:5px;
+}
+.org{
+  text-decoration: line-through;
+  margin-left: 10px;
+  margin-right: 5px;
+}
+.desc{
+    color: #333333;
+}
+.hr{
+    height: 10px;
+    width: 100%;
+    background-color: #009966;
+    opacity: 0.2;
+}
+.btn{
+    position: absolute;
+    right: 10px;
+    margin-top:50px;
+}
+.btn button{
+    width:52px;
+    height: 25px;
+    font-size:11px;
+    color: red;
+    border: 1px solid red;
+    background-color: #ffffff;
+}
+swiper{
+  z-index: 0;
+}

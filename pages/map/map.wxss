@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+padding-top: 0;
+}
+
+.map {
+  width: 375px;
+  height: 450px;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+
+button {
+  width: 100px;
+}
+
+image {
+  width: 40px;
+  height: 40px;
+}

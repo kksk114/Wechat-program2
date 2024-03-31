@@ -1,0 +1,29 @@
+<view class="content">
+  <form bindsubmit="formSubmit" bindreset="formReset">
+    <view class="items">
+      <view class="item">
+        <view class="title">原密码</view>
+        <view class="input">
+          <input name="oldPwd"  type="text" password placeholder="请输入原密码" placeholder-class="holder" />
+        </view>
+      </view>
+      <view class="line"></view>
+      <view class="item">
+        <view class="title">新密码</view>
+        <view class="input">
+          <input name="newPwd" type="text" password placeholder="请输入新密码" placeholder-class="holder" />
+        </view>
+      </view>
+      <view class="line"></view>
+      <view class="item">
+        <view class="title">确认密码</view>
+        <view class="input">
+          <input name="confirmPwd" type="text" password placeholder="请输入确认密码" placeholder-class="holder" />
+        </view>
+      </view>
+      <view class="line"></view>
+    </view>
+
+    <button class="btn" form-type="submit">提 交</button>
+  </form>
+</view>

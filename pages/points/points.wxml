@@ -1,0 +1,18 @@
+<view class="container">
+  <view class="titleWord">你的积分</view>
+  <view class="line"></view>
+  <view class="creditNumber">{{creditNumber}}</view>
+  <view class="line"></view>
+  <view class="hr"></view>
+  <scroll-view class="items" scroll-y="true" bindscrolltolower="loadMore">
+    <block wx:for="{{hotList}}">
+      <view class="item" id="{{item.id}}" bindtap='seeDetail'>
+        <view class="pic">
+          <image src="{{item.listPic}}" mode="scaleToFill"></image>
+        </view>
+        <view class="name">{{item.missionName}}</view>
+        <view class="quantity">剩余数量：{{item.quantity}}</view>
+      </view>
+    </block>
+  </scroll-view>
+</view>

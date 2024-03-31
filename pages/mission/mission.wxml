@@ -1,0 +1,81 @@
+<view class="content">
+
+<view class="search">
+    <view class="searchInput" bindtap="searchInput">
+      <image src="/pages/images/tubiao/fangdajing-1.jpg" style="width:15px;height:19px;"></image>
+      <text class="searchContent">搜索</text>
+    </view>
+  </view>
+  <view class="list">
+    <view class="tips">
+      <view class="title">待接取</view>
+      <view class="more" bindtap='more' data-type="hotList" id="0">查看更多 >
+        <view class="red-dot" wx:if="{{missionCount1 > 3}}"></view>
+      </view>
+    </view>
+
+    <view class="line"></view>
+    <view class="items">
+      <block wx:for="{{hotList}}">
+        <view class="item" id="{{item.id}}" bindtap='seeDetail'>
+          <view class="pic">
+            <image src="{{item.listPic}}" mode="scaleToFill"></image>
+          </view>
+          <view class="name">{{item.missionName}}</view>
+        </view>
+      </block>
+    </view>
+  </view>
+  <view class="hr"></view>
+
+  <view class="list">
+    <view class="tips">
+      <view class="title">未完成</view>
+      <view class="more" bindtap='more' data-type="spikeList" id="1">查看更多 >
+        <view class="red-dot" wx:if="{{missionCount2 > 3}}"></view>
+      </view>
+    </view>
+
+    <view class="line"></view>
+    <view class="items">
+      <block wx:for="{{spikeList}}">
+        <view class="item" id="{{item.id}}" bindtap='seeDetail'>
+          <view class="pic">
+            <image src="{{item.listPic}}" mode="scaleToFill"></image>
+          </view>
+          <view class="name">{{item.missionName}}</view>
+        </view>
+      </block>
+    </view>
+  </view>
+  <view class="hr"></view>
+
+  <view class="list">
+    <view class="tips">
+      <view class="title">已完成</view>
+      <view class="more" bindtap='more'  data-type="bestSellerList" id="2">查看更多 >
+      </view>
+    </view>
+
+    <view class="line"></view>
+    <view class="items">
+      <block wx:for="{{bestSellerList}}">
+        <view class="item" id="{{item.id}}" bindtap='seeDetail'>
+          <view class="pic">
+            <image src="{{item.listPic}}" mode="scaleToFill"></image>
+          </view>
+          <view class="name">{{item.missionName}}</view>
+        </view>
+      </block>
+    </view>
+  </view>
+  <view class="ads">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <image src="{{item}}" class="silde-image" mode="scaleToFill"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+</view>

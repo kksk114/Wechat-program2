@@ -1,0 +1,95 @@
+.content{
+  width: 100%;
+  font-family: "Microsoft YaHei";
+}
+.search{
+    width: 100%;
+    background-color: #009966;
+    height: 50px;
+    line-height: 50px;
+}
+.searchInput{
+    width: 95%;
+    background-color: #ffffff;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 15px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    margin: 0 auto;
+}
+.searchContent{
+    font-size:12px;
+    color: #777777;
+}
+.haibao{
+    text-align: center;
+    width: 100%;
+}
+.silde-image{
+    width: 100%;
+}
+.list{
+  height: 250px;
+}
+.line{
+    height: 1px;
+    width: 100%;
+    background-color: #009966;
+    opacity: 0.2;
+}
+.hr{
+    height: 10px;
+    width: 100%;
+    background-color: #cccccc;
+    opacity: 0.2;
+}
+.tips{
+  display: flex;
+  flex-direction: row;
+}
+.title{
+  padding: 10px;
+  font-size: 15px;
+  color: #009966;
+  font-weight: bold;
+}
+.more{
+   position: absolute;
+   right: 10px;
+   margin-top: 12px;
+   font-size: 12px;
+   color: #999999; 
+}
+.items{
+  padding: 10px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-left;
+}
+.item{
+  width: 30%;
+  height: 190px;
+  border: 1px solid #009966;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin: 0 auto;
+  text-align: center;
+}
+.pic{
+  margin-top: 5px;
+}
+.pic image{
+  width:100px;
+  height:120px;
+}
+.name{
+  font-size: 12px
+}
+.price{
+   color:red;
+   margin-top:2px; 
+   font-size: 16px;
+}

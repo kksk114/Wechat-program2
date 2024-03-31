@@ -1,0 +1,13 @@
+<!--pages/mine/mine.wxml-->
+<text>
+  <form bindsubmit="submitForm">
+  <view>
+    <input type="text" placeholder="手机号" model:value="{{phone}}" />
+    <input type="password" placeholder="密码" model:value="{{password}}" />
+    <input type="password" placeholder="确认密码" model:value="{{confirmPassword}}" />
+    <button type="button" bindtap="uploadIdCard">上传身份证</button>
+    <button type="button" bindtap="uploadStudentCard">上传学生证</button>
+    <button formType="submit">提交</button>
+  </view>
+</form>
+</text>

@@ -1,0 +1,37 @@
+.content{
+  background-color: #F9F9F8;
+  height: 600px;
+  font-family: "Microsoft YaHei";
+}
+.item{
+    display: flex;
+    flex-direction: row;
+    background-color: #ffffff;
+    padding: 10px;
+    height: 25px;
+    line-height: 25px;
+}
+.title{
+    font-size:16px;
+    font-weight: bold;
+    color: #666666;
+    width: 70px;
+}
+.input{
+  margin-left: 10px;
+}
+.holder{
+  font-size: 14px;
+  color: #cccccc;
+}
+.line{
+    height: 1px;
+    width: 100%;
+    background-color: #666666;
+    opacity: 0.2;
+}
+.btn{
+  background-color: #009966;
+  margin: 10px;
+  color:#ffffff;
+}

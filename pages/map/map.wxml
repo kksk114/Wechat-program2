@@ -1,0 +1,7 @@
+<view class="container">
+  <map id="map" class="map" longitude="{{longitude}}" latitude="{{latitude}}" markers="{{markers}}" circles="{{circles}}" bindmarkertap="markerTap" show-location="false"></map>
+  <view class="button-container">
+    <button class="navigate-button" bindtap="navigate">导航</button>
+    <button class="checkin-button" bindtap="checkIn">打卡</button>
+  </view>
+</view>
