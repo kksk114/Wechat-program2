@@ -8,7 +8,7 @@
     "pages/points/points",
     "pages/register/register",
     "pages/updatePwd/updatePwd",
-    "pages/goods/goods",
+    "pages/missionList/missionList",
     "pages/missionDetail/missionDetail",
     "pages/map/map"
   ],

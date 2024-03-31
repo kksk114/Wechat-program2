@@ -13,19 +13,13 @@ Page({
       "/pages/images/haibao/2.jpg",
       "https://api.mofun365.com:8888/images/goods/1555850845474.jpg"
     ],
-    hotList:[
+    unfinishedList:[
       { "id": 1, "listPic": "https://api.mofun365.com:8888/images/goods/1555850845474.jpg", "missionName": "微信小程序开发图解案例教程"},
       { "id": 2, "listPic": "https://api.mofun365.com:8888/images/goods/1555851154057.jpg", "missionName": "微信小程序开发全案精讲"},
       { "id": 3, "listPic": "https://api.mofun365.com:8888/images/goods/1555851345937.jpg", "missionName": "第一行代码 Java" }
     ]
 ,
-    spikeList:[
-      { "id": 4, "listPic": "https://api.mofun365.com:8888/images/goods/1555851497575.jpg", "missionName": "Android原理解析与开发指南"},
-      { "id": 5, "listPic": "https://api.mofun365.com:8888/images/goods/1555851661073.png", "missionName": "响应式Web开发项目教程"},
-      { "id": 6, "listPic": "https://api.mofun365.com:8888/images/goods/1555851817322.jpg", "missionName": "第一行代码 C语言" }
-    ]
-,
-    bestSellerList: [
+    finishedList: [
       { "id": 7, "listPic": "https://api.mofun365.com:8888/images/goods/1555851965264.jpg", "missionName": "前端HTML+CSS修炼之道" },
       { "id": 8, "listPic": "https://api.mofun365.com:8888/images/goods/1555850845474.jpg", "missionName": "微信小程序开发图解案例教程" },
       { "id": 9, "listPic": "https://api.mofun365.com:8888/images/goods/1555851154057.jpg", "missionName": "微信小程序开发全案精讲" }
@@ -37,9 +31,8 @@ Page({
     var page = this;
     page.getBannerList();
     page.getBookList();
-    app.globalData.hotList = hotList;
-    app.globalData.spikeList=spikeList;
-    app.globalData.bestSellerList=bestSellerList;
+    app.globalData.unfinishedList = unfinishedList;
+    app.globalData.finishedList=finishedList;
   },
   getBannerList: function () {
     var page = this;
@@ -78,12 +71,10 @@ Page({
       },
       success: function (res) {
         var mission = res.data.data;
-        var hotList = mission.rmjs;
-        var spikeList = mission.mssk;
-        var bestSellerList = mission.cxsj;
-        page.setData({ hotList: hotList });
-        page.setData({ spikeList: spikeList });
-        page.setData({ bestSellerList: bestSellerList });
+        var unfinishedList = mission.unfinishedList;
+        var finishedList = mission.finishedList;
+        page.setData({ unfinishedList:unfinishedList });
+        page.setData({ finishedList:finishedList });
         mission.forEach(function(mission) {
           if (mission.type === 1) {
             page.setData({ missionCount1: page.data.missionCount1 + 1 });
@@ -97,17 +88,16 @@ Page({
   more: function(e) {
     var id = e.currentTarget.id;
     var type = e.currentTarget.dataset.type;
-    var hotList = JSON.stringify(this.data.hotList);
-    var spikeList = JSON.stringify(this.data.spikeList);
-    var bestSellerList = JSON.stringify(this.data.bestSellerList);
+    var unfinishedList = JSON.stringify(this.data.unfinishedList);
+    var finishedList = JSON.stringify(this.data.finishedList);
     wx.navigateTo({
-      url: '../goods/goods?id=' + id + '&type=' + type + '&hotList=' + hotList + '&spikeList=' + spikeList + '&bestSellerList=' + bestSellerList,
+      url: '../missionList/missionList?id=' + id + '&type=' + type + '&unfinishedList=' + unfinishedList  + '&finishedList=' + finishedList,
     })
   },
   seeDetail: function (e) {
-    var goodsId = e.currentTarget.id;
+    var missionId = e.currentTarget.id;
     wx.navigateTo({
-      url: '../goodsDetail/goodsDetail?goodsId=' + goodsId,
+      url: '../missionDetail/missionDetail?missionId=' + missionId,
     })
   },
   searchInput:function(e){

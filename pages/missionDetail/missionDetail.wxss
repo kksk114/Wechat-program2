@@ -1,1 +1,197 @@
-/* pages/missionDetail/missionDetail.wxss */
+.content{
+  width: 100%;
+  font-family: "Microsoft YaHei";
+}
+.haibao{
+    text-align: center;
+    width: 100%;
+}
+.swiperHeight{
+  height: 250px;
+}
+.silde-image{
+    width: 100%;
+    height: 250px;
+}
+.title{
+  padding: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  height: 20px;
+  line-height: 20px;
+}
+.tip{
+  font-size: 11px;
+  padding:3px;
+  background-color: #009966;
+  color:#ffffff;
+  font-weight: normal;
+  border-radius: 15px;
+  margin-right: 10px;
+}
+.desc{
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 12px;
+  color: #999999;
+}
+.price{
+  padding: 10px;
+  font-size: 12px;
+  color: #999999;
+}
+.symbol{
+  color: red;
+  font-size: 14px;
+  font-weight: bold;
+}
+.account{
+  color: red;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 2px;
+  margin-right: 20px;
+}
+.oldPrice{
+  text-decoration: line-through;
+}
+.items{
+  padding-left:10px;
+  padding-right:10px; 
+}
+.item{
+  display: flex;
+  flex-direction: row;
+  height: 40px;
+  line-height: 40px;
+  font-size: 13px;
+}
+.term{
+  width: 70px;
+}
+.priceInfo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.minus,.add{
+    border: 1px solid #cccccc;
+    width: 25px;
+    height: 20px;
+    line-height: 20px;
+    color: #009966;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+}
+.count{
+    width: 30px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+}
+.hr{
+   height: 10px;
+   background-color: #dddddd;
+}
+.line{
+    height: 1px;
+    width: 100%;
+    background-color: #dddddd;
+    opacity: 0.2;
+}
+.mark{
+  font-size: 12px;
+  padding: 10px;
+  height: 20px;
+  line-height: 20px;
+  display: flex;
+  flex-direction: row;
+}
+.mark view{
+   margin-right: 5px;
+}
+.nav{
+    font-size: 12px;
+    color: #666666;
+}
+.tab{
+  display: flex;
+  flex-direction: row;
+  font-size: 13px;
+  border-bottom:1px solid #f2f2f2;
+}
+.select{
+    color:#009966;
+    display: inline-block;
+    line-height: 80rpx;
+    width: 50%;
+    text-align: center;
+    border-bottom: 5rpx solid #009966;
+    font-weight: bold;
+}
+.normal{
+    display: inline-block;
+    line-height: 80rpx;
+    width: 50%;
+    text-align: center;
+}
+.detail{
+  width: 90%;
+  margin: 0 auto;
+  margin-top:10px; 
+}
+.detail image{
+  width: 100%;
+}
+.bottom{
+  background-color:#ffffff;
+  height: 50px;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.cart{
+  width: 20%;
+  height: 100%;
+  text-align: center;
+  line-height: 80px;
+}
+.cart image{
+  width: 40px;
+  height: 40px;
+}
+.intocart{
+   width: 50%;
+   background-color: #ffcc00;
+   color: #ffffff;
+   font-size:16px;
+   text-align: center;
+   line-height: 50px;
+}
+.toMap{
+  width: 50%;
+  background-color: #009966;
+  color: #ffffff;
+  font-size:16px;
+  text-align: center;
+  line-height: 50px;
+}
+.label{
+  position: absolute;
+  border: 1px solid red;
+  font-size: 10px;
+  color: red;
+  height: 12px;
+  line-height:12px;
+  width: 20px;
+  text-align: center;
+  border-radius: 8px;
+  left:38px;
+  top:5px; 
+  background-color: #ffffff;
+}

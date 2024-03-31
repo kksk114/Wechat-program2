@@ -17,7 +17,7 @@
   <view class="hr"></view>
   <view class="list">
     <view class="tips">
-      <view class="title">热门技术</view>
+      <view class="title">未完成</view>
       <view class="more" bindtap='more' data-type="hotList" id="0">查看更多 ></view>
     </view>
 
@@ -36,30 +36,10 @@
   </view>
   <view class="hr"></view>
 
+  
   <view class="list">
     <view class="tips">
-      <view class="title">秒杀时刻</view>
-      <view class="more" bindtap='more' id="1">查看更多 ></view>
-    </view>
-
-    <view class="line"></view>
-    <view class="items">
-      <block wx:for="{{spikeList}}">
-        <view class="item" id="{{item.id}}" bindtap='seeDetail'>
-          <view class="pic">
-            <image src="{{item.listPic}}" mode="scaleToFill"></image>
-          </view>
-          <view class="name">{{item.goodsName}}</view>
-          <view class="price">￥ {{item.goodsPrice}}</view>
-        </view>
-      </block>
-    </view>
-  </view>
-  <view class="hr"></view>
-
-  <view class="list">
-    <view class="tips">
-      <view class="title">畅销书籍</view>
+      <view class="title">已完成</view>
       <view class="more" bindtap='more' id="2">查看更多 ></view>
     </view>
     <view class="line"></view>

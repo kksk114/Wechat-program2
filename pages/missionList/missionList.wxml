@@ -26,7 +26,7 @@
             </view>
             <view class="movie-info">
               <view class="base-info">
-                <view class="name">{{item.goodsName}}</view>
+                <view class="name">{{item.missionName}}</view>
                 <view class="desc">作者：{{item.author}} 著</view>
                 <view class="desc">出版社：{{item.bookConcern}}</view>
                 <view class="desc">出版时间：{{item.publishTime}}</view>

@@ -16,7 +16,7 @@
 
     <view class="line"></view>
     <view class="items">
-      <block wx:for="{{hotList}}">
+      <block wx:for="{{unfinishedList}}">
         <view class="item" id="{{item.id}}" bindtap='seeDetail'>
           <view class="pic">
             <image src="{{item.listPic}}" mode="scaleToFill"></image>
@@ -38,7 +38,7 @@
 
     <view class="line"></view>
     <view class="items">
-      <block wx:for="{{spikeList}}">
+      <block wx:for="{{unfinishedList}}">
         <view class="item" id="{{item.id}}" bindtap='seeDetail'>
           <view class="pic">
             <image src="{{item.listPic}}" mode="scaleToFill"></image>
@@ -59,7 +59,7 @@
 
     <view class="line"></view>
     <view class="items">
-      <block wx:for="{{bestSellerList}}">
+      <block wx:for="{{finishedList}}">
         <view class="item" id="{{item.id}}" bindtap='seeDetail'>
           <view class="pic">
             <image src="{{item.listPic}}" mode="scaleToFill"></image>
