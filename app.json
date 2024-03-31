@@ -10,7 +10,8 @@
     "pages/updatePwd/updatePwd",
     "pages/missionList/missionList",
     "pages/missionDetail/missionDetail",
-    "pages/map/map"
+    "pages/map/map",
+    "pages/search/search"
   ],
   "permission": {
     "scope.userLocation": {

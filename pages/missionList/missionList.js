@@ -5,25 +5,22 @@ Page({
     currentTab: 0,
     mission: null,
     host: host,
-    hotList: null,
-    spikeList: null,
-    bestSellerList: null
+    finishedList: null,
+    unfinishedList: null
   },
   onLoad: function (options) {
     var type = options.id;
     console.log(type);
     this.setData({ currentTab: type });
-    if (options.hotList && options.spikeList && options.bestSellerList) {
+    if (options.finishedList  && options.unfinishedList) {
       this.setData({
-        hotList: JSON.parse(options.hotList),
-        spikeList: JSON.parse(options.spikeList),
-        bestSellerList: JSON.parse(options.bestSellerList)
+        finishedList: JSON.parse(options.finishedList),
+        unfinishedList: JSON.parse(options.unfinishedList)
       });
     }
     this.getBookList(type);  
-      this.getBookList('hotList');  
-      this.getBookList('spikeList');  
-      this.getBookList('bestSellerList');  
+      this.getBookList('finishedList');   
+      this.getBookList('unfinishedList');  
 
   },
   getBookList: function (type) {
@@ -69,12 +66,10 @@ Page({
       success: function (res) {
         var books = res.data.data;
         console.log(books);
-        if (type == 'hotList') {
-          page.setData({ hotList: books });
-        } else if (type == 'spikeList') {
-          page.setData({ spikeList: books });
-        } else if (type == 'bestSellerList') {
-          page.setData({ bestSellerList: books });
+        if (type == 'finishedList') {
+          page.setData({ finishedList: books });
+        }  else if (type == 'unfinishedList') {
+          page.setData({ unfinishedList: books });
         }
       }
     });

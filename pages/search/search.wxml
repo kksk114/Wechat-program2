@@ -1,0 +1,35 @@
+<form bindsubmit="formSubmit" bindreset="formReset">
+<view class="search">
+  <view class="searchBg">
+    <view>
+      <image src="/pages/images/tubiao/search-1.jpg" style="width:20px;height:21px;"></image>
+    </view>
+    <view>
+      <input type="text" placeholder="搜索莫凡商品" placeholder-class="holder" value="{{name}}" name="goodsName"/>
+    </view>
+  </view>
+  <button class="btn" form-type="submit" bindtap="searchGoods">搜索</button>
+</view>
+<view class="hr"></view>
+<block wx:if="{{result.length > 0}}">
+  <block wx:for="{{result}}">
+    <view class="item" id="{{item.id}}" bindtap='seeDetail'>
+      <view class="name">{{item.goodsName}}</view>
+      <view class="hr"></view>
+    </view>
+  </block>
+</block>
+<block wx:else>
+  <view class="hotSearch">
+    <view class="title">
+      <view class="left">热门搜索</view>
+      <view class="right" bindtap='refresh'>换一批</view>
+    </view>
+    <view class="tips">
+    <block wx:for="{{goodsNames}}">
+      <view class="tip">{{item.goodsName}}</view>
+    </block>
+    </view>
+  </view>
+</block>
+</form>

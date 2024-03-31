@@ -7,8 +7,7 @@
   </view>
   <view class="type">
     <view class="{{currentTab==0?'select':'default'}}" data-current="0" bindtap="switchNav">未接取</view>
-    <view class="{{currentTab==1?'select':'default'}}" data-current="1" bindtap="switchNav">未完成</view>
-    <view class="{{currentTab==2?'select':'default'}}" data-current="2" bindtap="switchNav">已完成</view>
+    <view class="{{currentTab==1?'select':'default'}}" data-current="1" bindtap="switchNav">已完成</view>
   </view>
   <view class="hr"></view>
   <view class="hr"></view>
@@ -42,31 +41,7 @@
           
         </view>
       </swiper-item>
-      <swiper-item>
-        <view class="list">
-        <block wx:for="{{hotList}}">
-          <view class="book" bindtap="seeDetail" id="{{item.id}}">
-            <view class="pic">
-              <image src="{{item.listPic}}" mode="aspectFit" style="width:115px;height:120px;"></image>
-            </view>
-            <view class="movie-info">
-              <view class="base-info">
-                <view class="name">{{item.goodsName}}</view>
-                <view class="desc">作者：{{item.author}} 著</view>
-                <view class="desc">出版社：{{item.bookConcern}}</view>
-                <view class="desc">出版时间：{{item.publishTime}}</view>
-                <view class="people">
-                  <text class="price">￥{{item.goodsPrice}}</text>
-                  <text class="org">￥{{item.goodsCost}}</text>
-                </view>
-              </view>
-            </view>
-          </view>
-          <view class="hr"></view>
-        </block>
-          
-        </view>
-      </swiper-item>
+      
       <swiper-item>
         <view class="list">
         <block wx:for="{{spikeList}}">
